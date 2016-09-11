@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_seacrh)
     public void onClick() {
+        etInput.setText("");
         if (TextUtils.isEmpty(etInput.getText().toString())) {
             Toast.makeText(this, "请输入QQ号码！", Toast.LENGTH_SHORT).show();
         } else {
